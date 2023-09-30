@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A86FF7B2AC7BB6700D2485C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A86FF7A2AC7BB6700D2485C /* README.md */; };
 		1AF2410A2AC7201700175095 /* EvoluservicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF241092AC7201700175095 /* EvoluservicesApp.swift */; };
 		1AF2410C2AC7201700175095 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2410B2AC7201700175095 /* Persistence.swift */; };
 		1AF2410F2AC7201700175095 /* evoluservices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2410D2AC7201700175095 /* evoluservices.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A86FF7A2AC7BB6700D2485C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1AF241062AC7201700175095 /* evoluservices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evoluservices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF241092AC7201700175095 /* EvoluservicesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvoluservicesApp.swift; sourceTree = "<group>"; };
 		1AF2410B2AC7201700175095 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		1AF240FD2AC7201600175095 = {
 			isa = PBXGroup;
 			children = (
+				1A86FF7A2AC7BB6700D2485C /* README.md */,
 				1AF241082AC7201700175095 /* evoluservices */,
 				1AF2411F2AC7201900175095 /* evoluservicesTests */,
 				1AF241292AC7201900175095 /* evoluservicesUITests */,
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A86FF7B2AC7BB6700D2485C /* README.md in Resources */,
 				1AF241172AC7201900175095 /* Preview Assets.xcassets in Resources */,
 				1AF241132AC7201900175095 /* Assets.xcassets in Resources */,
 			);
