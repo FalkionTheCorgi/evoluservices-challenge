@@ -103,10 +103,7 @@ struct PersistenceController {
                 
             }
                 
-            
-            
-            
-            
+
         } else {
             
             print("Item não localizado.")

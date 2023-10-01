@@ -22,6 +22,7 @@ class ListViewModel: ObservableObject{
         
     }
     
+    //método que observa a atualização do banco de dados local
     func getTasks() {
         
         let coreData = PersistenceController.shared
@@ -34,8 +35,9 @@ class ListViewModel: ObservableObject{
         
     }
     
+    //método para atualizar a published com a lista de items
     private func atualizarLista() {
-        // Obtenha os dados do banco de dados
+       
         let itemsFromDatabase = PersistenceController.shared.getAllItems()
         
 

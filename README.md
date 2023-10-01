@@ -6,6 +6,7 @@
 - [Tecnologias](#tecnologias)
 - [Como Utilizo o Projeto?](#como-utilizo-o-projeto)
 - [Obrigatórios](#obrigatórios)
+- [Observações](#observações)
 - [Créditos](#créditos)
 
 ## [Breve Descrição](#sobre)
@@ -23,7 +24,8 @@ Esse aplicativo utilizou as seguintes tecnologias:
 
 ## [Como Utilizo o Projeto?](#sobre)
 
-Para utilizar o projeto é necessário utilizar um simulador de Iphone com a versão do sistema operacional IOS16+.
+- Para utilizar o projeto será necessário baixar o projeto ou fazer o git clone do repositório.
+- Após isso abrir o projeto pelo arquivo "ProjetoTeste.xcworkspace" e a partir disso compilar no seu simulador do Iphone com sistema IOS16+. 
 
 ## [Obrigatórios](#sobre)
 
@@ -32,6 +34,10 @@ Para utilizar o projeto é necessário utilizar um simulador de Iphone com a ver
 - [x] Editar tarefa: o usuário pode editar o título e a descrição de uma tarefa existente.
 - [x] Excluir tarefa: o usuário pode excluir uma tarefa existente.
 - [x] Persistência de dados: carregar a lista de tarefas previamente salvas no app.
+
+## [Observações](#sobre)
+
+- Foi utilizado o emulador do "Iphone 15 Pro" para o desenvolvimento da solução.
 
 ## [Créditos](#sobre)
 

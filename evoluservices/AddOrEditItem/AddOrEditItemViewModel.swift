@@ -12,6 +12,7 @@ class AddOrEditItemViewModel: ObservableObject{
     @Published var buttonTitle = "ADICIONAR"
     @Published var isProgress = false
     
+    //método para extrair data e hora local e devolver como string
     func getDate() -> String{
         
         let now = Date() // Obtém a data e hora atuais
