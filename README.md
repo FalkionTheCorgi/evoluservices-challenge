@@ -25,7 +25,7 @@ Esse aplicativo utilizou as seguintes tecnologias:
 ## [Como Utilizo o Projeto?](#sobre)
 
 - Para utilizar o projeto será necessário baixar o projeto ou fazer o git clone do repositório.
-- Após isso abrir o projeto pelo arquivo "ProjetoTeste.xcworkspace" e a partir disso compilar no seu simulador do Iphone com sistema IOS16+. 
+- Após isso abrir o projeto pelo arquivo "evoluservices.xcodeproj" e a partir disso compilar no seu simulador do Iphone com sistema IOS16+. 
 
 ## [Obrigatórios](#sobre)
 
