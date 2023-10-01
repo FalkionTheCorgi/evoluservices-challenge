@@ -116,11 +116,11 @@
 		1AF241082AC7201700175095 /* evoluservices */ = {
 			isa = PBXGroup;
 			children = (
-				1AF241502AC79F8D00175095 /* details */,
-				1AF2414B2AC75BDC00175095 /* component */,
-				1AF241462AC7530600175095 /* adicionarItem */,
-				1AF241422AC73C5600175095 /* coreData */,
-				1AF2413D2AC72E4C00175095 /* list */,
+				1AF241502AC79F8D00175095 /* Details */,
+				1AF2414B2AC75BDC00175095 /* Component */,
+				1AF241462AC7530600175095 /* AddOrEditItem */,
+				1AF241422AC73C5600175095 /* CoreData */,
+				1AF2413D2AC72E4C00175095 /* List */,
 				1AF241092AC7201700175095 /* EvoluservicesApp.swift */,
 				1AF241122AC7201900175095 /* Assets.xcassets */,
 				1AF241142AC7201900175095 /* evoluservices.entitlements */,
@@ -154,7 +154,7 @@
 			path = evoluservicesUITests;
 			sourceTree = "<group>";
 		};
-		1AF2413D2AC72E4C00175095 /* list */ = {
+		1AF2413D2AC72E4C00175095 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				1AF2413B2AC728CE00175095 /* ListView.swift */,
@@ -162,41 +162,41 @@
 				1AF241402AC733C100175095 /* CellView.swift */,
 				1AF2414E2AC7895F00175095 /* CellViewModel.swift */,
 			);
-			path = list;
+			path = List;
 			sourceTree = "<group>";
 		};
-		1AF241422AC73C5600175095 /* coreData */ = {
+		1AF241422AC73C5600175095 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				1AF2410D2AC7201700175095 /* evoluservices.xcdatamodeld */,
 				1AF2410B2AC7201700175095 /* Persistence.swift */,
 			);
-			path = coreData;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
-		1AF241462AC7530600175095 /* adicionarItem */ = {
+		1AF241462AC7530600175095 /* AddOrEditItem */ = {
 			isa = PBXGroup;
 			children = (
 				1AF241472AC7535000175095 /* AddOrEditItem.swift */,
 				1AF241492AC75A0E00175095 /* AddOrEditItemViewModel.swift */,
 			);
-			path = adicionarItem;
+			path = AddOrEditItem;
 			sourceTree = "<group>";
 		};
-		1AF2414B2AC75BDC00175095 /* component */ = {
+		1AF2414B2AC75BDC00175095 /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				1AF2414C2AC75BF400175095 /* ProgressButton.swift */,
 			);
-			path = component;
+			path = Component;
 			sourceTree = "<group>";
 		};
-		1AF241502AC79F8D00175095 /* details */ = {
+		1AF241502AC79F8D00175095 /* Details */ = {
 			isa = PBXGroup;
 			children = (
 				1AF241512AC79FA100175095 /* DetailsView.swift */,
 			);
-			path = details;
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

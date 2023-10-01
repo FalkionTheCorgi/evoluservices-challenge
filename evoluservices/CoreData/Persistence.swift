@@ -39,7 +39,7 @@ struct PersistenceController {
         }
     }
     
-    func saveItem(title: String, description: String, date: String) async {
+    func saveItem(title: String, description: String, date: String) {
         
         let item = Item(context: persistentContainer.viewContext)
         item.id = UUID().uuidString
@@ -47,16 +47,15 @@ struct PersistenceController {
         item.descript = description
         item.date = date
         
-        await persistentContainer.viewContext.performAndWait {
-            do{
-                try persistentContainer.viewContext.save()
-                dataChangedPublisher.send()
-            } catch {
-                
-                print("Falha ao salvar item: \(title)")
-                
-            }
+        do{
+            try persistentContainer.viewContext.save()
+            dataChangedPublisher.send()
+        } catch {
+            
+            print("Falha ao salvar item: \(title)")
+            
         }
+        
         
         
     }
@@ -79,7 +78,7 @@ struct PersistenceController {
         
     }
     
-    func updateItem(id: String, title: String, description: String, date: String) async {
+    func updateItem(id: String, title: String, description: String) {
         
         let item: Item!
         
@@ -92,22 +91,19 @@ struct PersistenceController {
             
             item = fetchResults!.first
             
-            item.date = date
             item.descript = description
             item.title = title
 
-            await persistentContainer.viewContext.performAndWait {
-                do{
-                    try persistentContainer.viewContext.save()
-                    dataChangedPublisher.send()
-      
-                } catch {
 
-                    print("Erro ao editar Item")
-                    
-                }
+            do{
+                try persistentContainer.viewContext.save()
+                dataChangedPublisher.send()
+            } catch {
+                print("Erro ao editar Item")
                 
             }
+                
+            
             
             
             

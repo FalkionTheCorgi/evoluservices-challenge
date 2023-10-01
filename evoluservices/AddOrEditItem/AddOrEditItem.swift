@@ -28,7 +28,7 @@ struct AddOrEditItem: View {
                    .bold() // Deixa o texto em negrito
                    .padding()
                 
-                TextField("Title", text: $title)
+                TextField("Título", text: $title)
                     .padding()
                     .multilineTextAlignment(.leading)
                     .overlay{
@@ -36,7 +36,7 @@ struct AddOrEditItem: View {
                             .stroke(verifyField ? title.isEmpty ? Color.red : Color.gray : Color.gray, lineWidth: 1)
                     }
                 
-                TextField("Description", text: $description)
+                TextField("Descrição", text: $description)
                     .padding()
                     .multilineTextAlignment(.leading)
                     .overlay{
@@ -52,15 +52,11 @@ struct AddOrEditItem: View {
                         verifyField.toggle()
                     } else {
                         if isEdit {
-                            Task{
-                                await model.editData(id: id, title: title, description: description)
-                            }
+                            model.editData(id: id, title: title, description: description)
                             dismiss()
                         } else {
                             
-                            Task{
-                                await model.saveData(title: title, description: description)
-                            }
+                            model.saveData(title: title, description: description)
                             dismiss()
                             
                         }

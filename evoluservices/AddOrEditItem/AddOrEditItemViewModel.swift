@@ -26,16 +26,16 @@ class AddOrEditItemViewModel: ObservableObject{
         
     }
     
-    func saveData(title: String, description: String) async {
+    func saveData(title: String, description: String) {
         
         DispatchQueue.main.async{
             self.isProgress = true
-            self.buttonTitle = "LOADING"
+            self.buttonTitle = "CARREGANDO"
         }
         
         let coreData = PersistenceController.shared
         
-        await coreData.saveItem(title: title, description: description, date: getDate())
+        coreData.saveItem(title: title, description: description, date: getDate())
         
         DispatchQueue.main.async{
             self.isProgress = false
@@ -47,7 +47,7 @@ class AddOrEditItemViewModel: ObservableObject{
         
     }
     
-    func editData(id: String, title: String, description: String) async {
+    func editData(id: String, title: String, description: String) {
 
         DispatchQueue.main.async{
             self.isProgress = true
@@ -56,7 +56,7 @@ class AddOrEditItemViewModel: ObservableObject{
         
         let coreData = PersistenceController.shared
         
-        await coreData.updateItem(id: id, title: title, description: description, date: getDate())
+        coreData.updateItem(id: id, title: title, description: description)
         
         DispatchQueue.main.async{
             self.isProgress = true

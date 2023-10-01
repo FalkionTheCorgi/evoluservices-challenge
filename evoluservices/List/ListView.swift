@@ -46,7 +46,7 @@ struct ListView: View {
                         
                         VStack{
                             
-                            Text("There's no Task")
+                            Text("Sem Tarefas Registradas")
                                 .frame(width: width, height: height, alignment: .center)
                             
                         }
@@ -54,7 +54,7 @@ struct ListView: View {
                     
                 }
             }
-            .navigationTitle("Evoluservice")
+            .navigationTitle("Lista de Tarefas")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarRole(.editor)
             .toolbar{

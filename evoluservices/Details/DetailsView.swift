@@ -20,14 +20,14 @@ struct DetailsView: View {
             VStack(spacing: 16){
                 
                 VStack(spacing: 32){
-                    Text("Description of Card")
+                    Text("Descrição do Item")
                        .font(.title) // Define a fonte do título título
                        .bold() // Deixa o texto em negrito
                        .foregroundStyle(Color("TitleColor"))
                        .padding()
                     
                     HStack{
-                        Text("Title: ")
+                        Text("Título: ")
                             .foregroundStyle(Color("TitleColor"))
                             .bold()
                         +  Text(title.isEmpty ? "Empty" : title).foregroundStyle(Color("TitleColor"))
@@ -37,7 +37,7 @@ struct DetailsView: View {
                 }
                 
                 HStack{
-                    Text("Description: ")
+                    Text("Descrição: ")
                         .foregroundStyle(Color("TitleColor"))
                         .bold()
                     +  Text(description.isEmpty ? "Empty" : description).foregroundStyle(Color("TitleColor"))
@@ -45,7 +45,7 @@ struct DetailsView: View {
                 }
                 
                 HStack{
-                    Text("Date: ")
+                    Text("Data: ")
                         .foregroundStyle(Color("TitleColor"))
                         .bold()
                     +  Text(date.isEmpty ? "Empty" : date).foregroundStyle(Color("TitleColor"))
