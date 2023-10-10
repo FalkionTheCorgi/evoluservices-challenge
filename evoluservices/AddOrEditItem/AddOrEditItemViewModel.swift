@@ -52,7 +52,7 @@ class AddOrEditItemViewModel: ObservableObject{
 
         DispatchQueue.main.async{
             self.isProgress = true
-            self.buttonTitle = "LOADING"
+            self.buttonTitle = "CARREGANDO"
         }
         
         let coreData = PersistenceController.shared
